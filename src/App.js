@@ -107,7 +107,7 @@ function App() {
   return (
     <DragContext.Provider value={{ onDragStart: handleDragStart, onDropCard: handleDropCard }}>
       <div className="app">
-        <Row className="app-input" gutter={20}>
+        <Row className="app-input" >
           <Col span={10}>
             <CardLib dataSource={cards} />
             <CardEnemy dataSource={cards} />
