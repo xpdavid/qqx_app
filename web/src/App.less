@@ -1,0 +1,129 @@
+.app {
+  padding: 10px;
+}
+
+.card-lib.ant-collapse {
+  & > .ant-collapse-item > .ant-collapse-header {
+    background: #000;
+    color: #fff;
+  }
+
+  .ant-collapse-content {
+    border-top: 1px solid #000;
+
+    & > .ant-collapse-content-box {
+      padding: 0;
+
+    }
+  }
+
+  .ant-collapse-item {
+    border: 1px solid #000;
+    background: #000;
+  }
+}
+
+.card-item.ant-tag {
+  margin-top: 10px;
+  cursor: move;
+}
+
+.drop-area {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.card-enemy {
+  height: 90px;
+
+  .left {
+    background-color: #F44336;
+    border-right: 1px solid #F44336;
+    border-bottom: 1px solid #F44336;
+  }
+
+  .right {
+    border: 1px solid #F44336;
+    border-bottom: none;
+  }
+}
+
+.card-common {
+  height: 90px;
+
+  .left {
+    background-color: #FF9800;
+    border-right: 1px solid #FF9800;
+    border-bottom: 1px solid #FF9800;
+  }
+
+  .right {
+    border: 1px solid #FF9800;
+    border-bottom: none;
+  }
+}
+
+.card-mine-used {
+  height: 90px;
+
+  & > .left {
+    background-color: #080;
+    border-right: 1px solid #080;
+    border-bottom: 1px solid #080;
+  }
+
+  & > .right {
+    border: 1px solid #080;
+    border-bottom: none;
+  }
+}
+
+.card-mine-unused {
+  height: 90px;
+
+  & > .left {
+    background-color: #03a9f4;
+    border-right: 1px solid #03a9f4;
+    border-bottom: 1px solid #03a9f4;
+  }
+
+  & > .right {
+    border: 1px solid #03a9f4;
+  }
+}
+
+.left {
+  color: #fff;
+  float: left;
+  width: 80px;
+  height: 100%;
+  writing-mode: vertical-lr;
+  line-height: 80px;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: center;
+  user-select: none;
+}
+
+.right {
+  margin-left: 80px;
+  height: 100%;
+}
+
+#group_chart {
+  .group-chart-content {
+    height: 100vh;
+  }
+}
+
+.suggestion.ant-card {
+  margin-top: 20px;
+}
+
+.btn-reset {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
