@@ -8,19 +8,17 @@ import CardCommon from './components/CardCommon';
 import CardMineUsed from './components/CardMineUsed';
 import CardMineUnused from './components/CardMineUnused';
 import GroupChart from './components/GroupChart';
-import Suggest from './components/Suggest';
+import CardInput from './components/CardInput';
 
 import carddata from './carddata'
-import {computeSize, getLinks, getSuggestion, initCardsPosition} from './utils/compute'
+import {computeSize, getLinks, initCardsPosition} from './utils/compute'
 
 import DragContext from './context/DragContext'
 
 function App() {
 
     const [cards, setCards] = useState(carddata.nodes)
-    const [groups, setGroups] = useState(carddata.groups)
     const [links, setLinks] = useState([])
-    const [suggestion, setSuggestion] = useState(null)
 
     // 初始化
     const init = () => {
@@ -31,9 +29,6 @@ function App() {
         setLinks(links)
         // 3. 根据卡牌关系，设置卡牌尺寸
         computeSize(cards, links)
-        // 4. 计算自身卡牌和公共卡牌的建议
-        const suggestion = getSuggestion(cards, links)
-        setSuggestion(suggestion)
         refreshCards();
     }
 
@@ -55,32 +50,18 @@ function App() {
         // 设置卡牌新的位置
         card.position = position;
 
-        const enmemyCardIds = cards.filter(l => l.position === 1).map(l => l.id);
-        // 获取我方手牌季节类型
-        const myCardTypes = new Set(cards.filter(l => l.position === 4).map(l => l.cardType));
-        // 废牌（即我方手牌类型不对应的公共牌和牌库牌）
-        const dirtyCardIds = cards.filter(card => {
-            if ((card.position === 2 || card.position === 0) && !myCardTypes.has(card.cardType)) {
-                return true
-            }
-            return false
-        }).map(l => l.id)
         // 重新计算所有可能的组合，关系及Size
         // 筛选掉所有包含对方展示牌的组合
+        const enemyCardIds = cards.filter(l => l.position === 1).map(l => l.id);
         let newGroups = carddata.groups.filter((group) => {
             // 筛选掉所有包含对方展示牌的组合
             for (let i = 0, len = group.member.length; i < len; i++) {
-                if (enmemyCardIds.includes(group.member[i])) {
-                    return false;
-                }
-                // 筛选掉所有废牌
-                if (dirtyCardIds.includes(group.member[i])) {
+                if (enemyCardIds.includes(group.member[i])) {
                     return false;
                 }
             }
             return true;
         })
-        setGroups(newGroups);
 
         // 设置新的关系
         const links = getLinks(newGroups);
@@ -89,10 +70,18 @@ function App() {
         // 根据卡牌关系，设置卡牌尺寸
         computeSize(cards, links);
 
-        // 计算自身卡牌和公共卡牌的建议
-        const suggestion = getSuggestion(cards, links);
-        setSuggestion(suggestion);
+        refreshCards();
+    }
 
+    const handleCardsUpdate = (commonCardIds, minCardIds) => {
+        commonCardIds.forEach(id => {
+            const card = cards.find(l => l.id === id)
+            card.position = 4 //我方手牌
+        });
+        minCardIds.forEach(id => {
+            const card = cards.find(l => l.id === id)
+            card.position = 2 //公共牌
+        });
         refreshCards();
     }
 
@@ -110,16 +99,13 @@ function App() {
                 <Row className="app-input">
                     <Col span={10}>
                         <CardLib dataSource={cards}/>
+                        <CardInput cards={cards} handleCardsUpdate={handleCardsUpdate}/>
                         <CardEnemy dataSource={cards}/>
                         <CardCommon dataSource={cards}/>
                         <CardMineUsed dataSource={cards}/>
                         <CardMineUnused dataSource={cards}/>
-                        <Suggest suggestion={suggestion}/>
-                        <div style={{textAlign: "center", paddingTop: 20}}>
-                            <Button className='btn-reset' type='primary' shape="circle" size='large'
-                                    onClick={handleReset}>
-                                重置牌局
-                            </Button>
+                        <div style={{textAlign: "center", paddingTop: 4}}>
+                            <Button type="danger" onClick={handleReset}>重置牌局</Button>
                         </div>
                     </Col>
                     <Col span={14}>

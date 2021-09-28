@@ -3,7 +3,7 @@ import useEchart from '../../utils/hooks/useEchart';
 
 function GroupChart({cards, links}) {
     // 获取我方手牌季节类型
-    const myCardTypes = new Set(cards.filter(l => l.position === 4).map(l => l.cardType));
+    // const myCardTypes = new Set(cards.filter(l => l.position === 4).map(l => l.cardType));
     let nodes = cards.filter(card => {
         // 图表不展示对方卡牌
         if (card.position === 1) {
@@ -13,10 +13,11 @@ function GroupChart({cards, links}) {
         if (!links.find(l => l.target === card.id || l.source === card.id)) {
             return false
         }
-        // 对于公共牌和牌库牌，只展示与手牌季节配对的
-        if ((card.position === 2 || card.position === 0) && !myCardTypes.has(card.cardType)) {
-            return false
-        }
+        // 去除底下条件限制因为可以通过换牌拿到不同季节
+        // // 对于公共牌和牌库牌，只展示与手牌季节配对的
+        // if ((card.position === 2 || card.position === 0) && !myCardTypes.has(card.cardType)) {
+        //     return false
+        // }
         return true
     })
     // 根据nodes和links生成nodeLinks
@@ -79,8 +80,6 @@ function GroupChart({cards, links}) {
         title: {
             text: '推测组合关系图',
             subtext: '关系越多球越大，线越粗优先级越高',
-            top: 'top',
-            left: 'left'
         },
         tooltip: {},
         legend: [{
@@ -100,7 +99,7 @@ function GroupChart({cards, links}) {
                 links: nodeLinks,
                 categories: categories,
                 roam: true,
-                focusNodeAdjacency: true,
+                emphasis: {focus: 'adjacency'},
                 force: {
                     repulsion: 100,
                     edgeLength: [50, 100],
@@ -117,7 +116,7 @@ function GroupChart({cards, links}) {
     useEchart(domref, options, [nodes, nodeLinks])
     return (
         <div id="group_chart">
-            <div ref={domref} className="group-chart-content"></div>
+            <div ref={domref} className="group-chart-content"/>
         </div>
     );
 }
