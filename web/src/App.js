@@ -74,13 +74,21 @@ function App() {
     }
 
     const handleCardsUpdate = (commonCardIds, minCardIds) => {
+        const prevCommonCardIds = cards.filter(l => l.position === 2).map(l => l.id);
+        const missingCommonCardIds = prevCommonCardIds.filter(id => !commonCardIds.includes(id))
+        // 之前在公共牌库中，现在没有了，assume玩家update了，所以进了敌方牌库中
+        missingCommonCardIds.forEach(id => {
+            const card = cards.find(l => l.id === id)
+            card.position = 1 //敌方牌
+        })
         commonCardIds.forEach(id => {
             const card = cards.find(l => l.id === id)
-            card.position = 4 //我方手牌
+            card.position = 2 //公共牌
         });
+
         minCardIds.forEach(id => {
             const card = cards.find(l => l.id === id)
-            card.position = 2 //公共牌
+            card.position = 4 //我方手牌
         });
         refreshCards();
     }
