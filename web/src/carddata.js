@@ -5,7 +5,7 @@ const data = {
         "cardType": 0,
         "symbolSize": 1,
         "category": 0
-    }, {"id": 2, "name": "昊仓", "cardType": 0, "symbolSize": 1, "category": 0}, {
+    }, {"id": 2, "name": "昊苍", "cardType": 0, "symbolSize": 1, "category": 0}, {
         "id": 3,
         "name": "应清儿",
         "cardType": 0,
@@ -59,7 +59,7 @@ const data = {
         "cardType": 1,
         "symbolSize": 1,
         "category": 0
-    }, {"id": 20, "name": "曲小溪", "cardType": 1, "symbolSize": 1, "category": 0}, {
+    }, {"id": 20, "name": "曲小惜", "cardType": 1, "symbolSize": 1, "category": 0}, {
         "id": 21,
         "name": "乌芒",
         "cardType": 1,
@@ -95,7 +95,7 @@ const data = {
         "cardType": 1,
         "symbolSize": 1,
         "category": 0
-    }, {"id": 32, "name": "寄身象", "cardType": 1, "symbolSize": 1, "category": 0}, {
+    }, {"id": 32, "name": "寄身相", "cardType": 1, "symbolSize": 1, "category": 0}, {
         "id": 33,
         "name": "巨阙射日弓",
         "cardType": 1,
@@ -161,7 +161,7 @@ const data = {
         "cardType": 3,
         "symbolSize": 1,
         "category": 0
-    }, {"id": 54, "name": "司空赞", "cardType": 3, "symbolSize": 1, "category": 0}, {
+    }, {"id": 54, "name": "司空瓒", "cardType": 3, "symbolSize": 1, "category": 0}, {
         "id": 55,
         "name": "伊琅相思",
         "cardType": 3,
@@ -173,7 +173,7 @@ const data = {
         "cardType": 3,
         "symbolSize": 1,
         "category": 0
-    }, {"id": 58, "name": "逸阳", "cardType": 3, "symbolSize": 1, "category": 0}, {
+    }, {"id": 58, "name": "逸扬", "cardType": 3, "symbolSize": 1, "category": 0}, {
         "id": 59,
         "name": "太华山",
         "cardType": 3,
@@ -199,175 +199,167 @@ const data = {
         "category": 0
     }],
     "links": [],
-    "groups": [{"score": 4, "name": "0,13", "member": [0, 13]}, {
+    "groups": [{"score": 4, "name": "嵩岳蓬玄", "member": [0, 60]}, {
         "score": 4,
-        "name": "0,14",
+        "name": "天南忘忧",
+        "member": [0, 28]
+    }, {"score": 4, "name": "云外洞天", "member": [0, 44]}, {"score": 4, "name": "剑心前辈", "member": [0, 13]}, {
+        "score": 4,
+        "name": "影照前尘",
         "member": [0, 14]
-    }, {"score": 4, "name": "0,31", "member": [0, 31]}, {"score": 4, "name": "0,64", "member": [0, 64]}, {
+    }, {"score": 4, "name": "吃赏人", "member": [0, 31]}, {"score": 4, "name": "青灯指路", "member": [0, 64]}, {
         "score": 4,
-        "name": "0,48",
+        "name": "聚宝盆",
         "member": [0, 48]
-    }, {"score": 4, "name": "0,47", "member": [0, 47]}, {
-        "score": 20,
-        "name": "0,58,25,11",
-        "member": [0, 58, 25, 11]
-    }, {"score": 4, "name": "1,34", "member": [1, 34]}, {
-        "score": 20,
-        "name": "1,34,44",
-        "member": [1, 34, 44]
-    }, {"score": 4, "name": "34,14", "member": [34, 14]}, {"score": 4, "name": "2,3", "member": [2, 3]}, {
-        "score": 10,
-        "name": "2,3,22",
-        "member": [2, 3, 22]
-    }, {"score": 20, "name": "2,3,16,35", "member": [2, 3, 16, 35]}, {
+    }, {"score": 4, "name": "都是素材", "member": [0, 47]}, {"score": 4, "name": "灵宠之谊", "member": [1, 34]}, {
         "score": 4,
-        "name": "2,26",
-        "member": [2, 26]
-    }, {"score": 4, "name": "2,23", "member": [2, 23]}, {
-        "score": 20,
-        "name": "2,23,22,62",
-        "member": [2, 23, 22, 62]
-    }, {"score": 4, "name": "16,26", "member": [16, 26]}, {
+        "name": "主人别走",
+        "member": [34, 14]
+    }, {"score": 4, "name": "月鸣青虫", "member": [2, 3]}, {"score": 4, "name": "假意真心", "member": [2, 26]}, {
         "score": 4,
-        "name": "16,24",
-        "member": [16, 24]
-    }, {"score": 10, "name": "16,24,26", "member": [16, 24, 26]}, {
+        "name": "养子与爱徒",
+        "member": [2, 23]
+    }, {"score": 4, "name": "青梅竹马", "member": [16, 35]}, {"score": 4, "name": "兄友妹恭", "member": [16, 24]}, {
         "score": 4,
-        "name": "16,35",
-        "member": [16, 35]
-    }, {"score": 4, "name": "35,26", "member": [35, 26]}, {
+        "name": "神机校尉",
+        "member": [16, 26]
+    }, {"score": 4, "name": "怀霜剑", "member": [35, 26]}, {"score": 4, "name": "以文入道", "member": [4, 47]}, {
         "score": 4,
-        "name": "16,20",
-        "member": [16, 20]
-    }, {"score": 4, "name": "20,32", "member": [20, 32]}, {
+        "name": "百鹤衣",
+        "member": [4, 59]
+    }, {"score": 4, "name": "一夜之师", "member": [4, 58]}, {"score": 4, "name": "书情画意", "member": [4, 36]}, {
         "score": 4,
-        "name": "20,41",
-        "member": [20, 41]
-    }, {"score": 4, "name": "24,20", "member": [24, 20]}, {
+        "name": "绛阙散更",
+        "member": [36, 59]
+    }, {"score": 4, "name": "金风玉露", "member": [5, 56]}, {"score": 4, "name": "明光天照", "member": [5, 43]}, {
         "score": 4,
-        "name": "24,29",
-        "member": [24, 29]
-    }, {"score": 4, "name": "4,47", "member": [4, 47]}, {"score": 4, "name": "4,59", "member": [4, 59]}, {
+        "name": "双雄并立",
+        "member": [5, 50]
+    }, {"score": 4, "name": "幽莲无声", "member": [50, 43]}, {"score": 4, "name": "金蟾啮香", "member": [17, 60]}, {
         "score": 4,
-        "name": "4,58",
-        "member": [4, 58]
-    }, {"score": 4, "name": "4,36", "member": [4, 36]}, {"score": 4, "name": "59,36", "member": [59, 36]}, {
-        "score": 4,
-        "name": "59,58",
-        "member": [59, 58]
-    }, {"score": 4, "name": "5,56", "member": [5, 56]}, {"score": 4, "name": "5,43", "member": [5, 43]}, {
-        "score": 4,
-        "name": "43,50",
-        "member": [43, 50]
-    }, {"score": 4, "name": "5,50", "member": [5, 50]}, {"score": 4, "name": "17,60", "member": [17, 60]}, {
-        "score": 4,
-        "name": "17,12",
+        "name": "大宫主",
         "member": [17, 12]
-    }, {"score": 4, "name": "12,6", "member": [12, 6]}, {"score": 4, "name": "17,6", "member": [17, 6]}, {
-        "score": 20,
-        "name": "17,6,51,37",
-        "member": [17, 6, 51, 37]
-    }, {"score": 4, "name": "51,37", "member": [51, 37]}, {
+    }, {"score": 4, "name": "流紫摇红", "member": [17, 6]}, {"score": 4, "name": "百岁童颜", "member": [6, 12]}, {
         "score": 4,
-        "name": "18,31",
-        "member": [18, 31]
-    }, {"score": 4, "name": "52,64", "member": [52, 64]}, {
+        "name": "顽石生花",
+        "member": [51, 37]
+    }, {"score": 4, "name": "大羿君", "member": [7, 27]}, {"score": 4, "name": "魔纹", "member": [7, 63]}, {
         "score": 4,
-        "name": "38,20",
+        "name": "长风绕指",
+        "member": [7, 33]
+    }, {"score": 4, "name": "红粉铁拳", "member": [18, 31]}, {"score": 4, "name": "幽廉使者", "member": [52, 64]}, {
+        "score": 4,
+        "name": "手帕交",
         "member": [38, 20]
-    }, {"score": 4, "name": "38,39", "member": [38, 39]}, {
+    }, {"score": 4, "name": "玉杯倾覆屏风倒", "member": [38, 39]}, {
         "score": 4,
-        "name": "38,60",
+        "name": "两难全",
         "member": [38, 60]
-    }, {"score": 4, "name": "38,32", "member": [38, 32]}, {
+    }, {"score": 4, "name": "昨日师徒", "member": [38, 32]}, {"score": 4, "name": "异姓兄妹", "member": [38, 54]}, {
         "score": 4,
-        "name": "38,54",
-        "member": [38, 54]
-    }, {"score": 80, "name": "38,8,9,19,20,60", "member": [38, 8, 9, 19, 20, 60]}, {
-        "score": 10,
-        "name": "8,9,19",
-        "member": [8, 9, 19]
-    }, {"score": 4, "name": "9,19", "member": [9, 19]}, {"score": 4, "name": "9,65", "member": [9, 65]}, {
+        "name": "鬼雄",
+        "member": [9, 65]
+    }, {"score": 4, "name": "小师叔", "member": [9, 19]}, {"score": 4, "name": "父女殊途", "member": [20, 32]}, {
         "score": 4,
-        "name": "39,45",
-        "member": [39, 45]
-    }, {"score": 4, "name": "39,54", "member": [39, 54]}, {
-        "score": 10,
-        "name": "39,8,4",
-        "member": [39, 8, 4]
-    }, {"score": 4, "name": "53,28", "member": [53, 28]}, {
+        "name": "傻狍子",
+        "member": [20, 41]
+    }, {"score": 4, "name": "独当一面", "member": [20, 24]}, {"score": 4, "name": "青云之志", "member": [39, 45]}, {
         "score": 4,
-        "name": "53,32",
-        "member": [53, 32]
-    }, {"score": 10, "name": "53,10,32", "member": [53, 10, 32]}, {
-        "score": 10,
-        "name": "53,10,40",
-        "member": [53, 10, 40]
-    }, {"score": 80, "name": "53,10,40,21,41,28", "member": [53, 10, 40, 21, 41, 28]}, {
+        "name": "无问南北",
+        "member": [39, 54]
+    }, {"score": 4, "name": "以身饲蛟", "member": [53, 28]}, {"score": 4, "name": "如兄如父", "member": [53, 32]}, {
         "score": 4,
-        "name": "10,41",
+        "name": "药人师徒",
         "member": [10, 41]
-    }, {"score": 4, "name": "10,27", "member": [10, 27]}, {
+    }, {"score": 4, "name": "侍酒童子", "member": [10, 27]}, {"score": 4, "name": "远游人", "member": [10, 47]}, {
         "score": 4,
-        "name": "10,47",
-        "member": [10, 47]
-    }, {"score": 4, "name": "40,42", "member": [40, 42]}, {
-        "score": 10,
-        "name": "40,42,59",
-        "member": [40, 42, 59]
-    }, {"score": 4, "name": "42,59", "member": [42, 59]}, {
+        "name": "前世金兰",
+        "member": [40, 42]
+    }, {"score": 4, "name": "欢喜冤家", "member": [21, 55]}, {"score": 4, "name": "剑星度厄", "member": [54, 46]}, {
         "score": 4,
-        "name": "54,46",
-        "member": [54, 46]
-    }, {"score": 4, "name": "55,21", "member": [55, 21]}, {
-        "score": 4,
-        "name": "55,30",
+        "name": "夜魍之变",
         "member": [55, 30]
-    }, {"score": 4, "name": "55,61", "member": [55, 61]}, {
-        "score": 10,
-        "name": "55,61,56",
-        "member": [55, 61, 56]
-    }, {"score": 4, "name": "57,59", "member": [57, 59]}, {
+    }, {"score": 4, "name": "九泉传说", "member": [55, 61]}, {"score": 4, "name": "待君归", "member": [57, 59]}, {
         "score": 4,
-        "name": "57,65",
+        "name": "鲮鱼公主",
         "member": [57, 65]
-    }, {"score": 10, "name": "57,65,15", "member": [57, 65, 15]}, {
+    }, {"score": 4, "name": "群妖出世", "member": [57, 32]}, {"score": 4, "name": "邪剑出世", "member": [22, 30]}, {
         "score": 4,
-        "name": "57,32",
-        "member": [57, 32]
-    }, {"score": 4, "name": "26,62", "member": [26, 62]}, {
+        "name": "星火微芒",
+        "member": [22, 29]
+    }, {"score": 4, "name": "小铸剑师", "member": [22, 26]}, {"score": 4, "name": "明镜高悬", "member": [42, 59]}, {
         "score": 4,
-        "name": "26,22",
-        "member": [26, 22]
-    }, {"score": 60, "name": "26,59,43,12,27", "member": [26, 59, 43, 12, 27]}, {
+        "name": "沙漠之舟",
+        "member": [24, 29]
+    }, {"score": 4, "name": "九极天火", "member": [58, 59]}, {"score": 4, "name": "木月清光", "member": [25, 26]}, {
         "score": 4,
-        "name": "43,12",
+        "name": "慈恩之光",
+        "member": [11, 43]
+    }, {"score": 4, "name": "冷月孤崖", "member": [26, 62]}, {"score": 4, "name": "阴华泉", "member": [43, 61]}, {
+        "score": 4,
+        "name": "共享花海",
         "member": [43, 12]
-    }, {"score": 4, "name": "43,61", "member": [43, 61]}, {
+    }, {"score": 4, "name": "不速之客", "member": [12, 62]}, {"score": 4, "name": "商谷福地", "member": [27, 44]}, {
         "score": 4,
-        "name": "12,62",
-        "member": [12, 62]
-    }, {"score": 4, "name": "27,44", "member": [27, 44]}, {
-        "score": 4,
-        "name": "27,33",
+        "name": "弓影弦声",
         "member": [27, 33]
-    }, {"score": 4, "name": "27,7", "member": [27, 7]}, {"score": 4, "name": "44,63", "member": [44, 63]}, {
+    }, {"score": 4, "name": "天衡五珏", "member": [44, 63]}, {"score": 4, "name": "金风剑鸣", "member": [28, 60]}, {
         "score": 4,
-        "name": "28,60",
-        "member": [28, 60]
-    }, {"score": 10, "name": "28,60,32", "member": [28, 60, 32]}, {
-        "score": 4,
-        "name": "45,46",
+        "name": "帝心之影",
         "member": [45, 46]
-    }, {"score": 4, "name": "29,61", "member": [29, 61]}, {
+    }, {"score": 4, "name": "阴明泉", "member": [29, 61]}, {"score": 4, "name": "荒原落日", "member": [29, 33]}, {
         "score": 4,
-        "name": "29,33",
-        "member": [29, 33]
-    }, {"score": 4, "name": "29,32", "member": [29, 32]}, {
-        "score": 4,
-        "name": "15,65",
-        "member": [15, 65]
-    }, {"score": 4, "name": "33,49", "member": [33, 49]}]
+        "name": "浴火重生",
+        "member": [29, 32]
+    }, {"score": 4, "name": "妖军联盟", "member": [15, 65]}, {"score": 4, "name": "羲皇之赐", "member": [49, 33]}, {
+        "score": 10,
+        "name": "千年守护",
+        "member": [1, 34, 44]
+    }, {"score": 10, "name": "如苍念清", "member": [2, 3, 22]}, {
+        "score": 10,
+        "name": "家学渊源",
+        "member": [16, 24, 26]
+    }, {"score": 10, "name": "吹叶记", "member": [4, 39, 8]}, {
+        "score": 10,
+        "name": "终南多神仙",
+        "member": [8, 9, 19]
+    }, {"score": 10, "name": "三圣", "member": [53, 10, 40]}, {
+        "score": 10,
+        "name": "羽觞飞时",
+        "member": [53, 10, 32]
+    }, {"score": 10, "name": "知天命", "member": [40, 42, 59]}, {
+        "score": 10,
+        "name": "灭门血祭",
+        "member": [54, 22, 30]
+    }, {"score": 10, "name": "灭国之战", "member": [55, 56, 61]}, {
+        "score": 10,
+        "name": "赞美阿嫂",
+        "member": [57, 15, 65]
+    }, {"score": 10, "name": "人皆去", "member": [58, 25, 11]}, {
+        "score": 10,
+        "name": "妖王乱世",
+        "member": [28, 60, 32]
+    }, {"score": 20, "name": "剑主奇谭", "member": [0, 58, 25, 11]}, {
+        "score": 20,
+        "name": "不爱练剑",
+        "member": [2, 3, 16, 35]
+    }, {"score": 20, "name": "荒神独尊", "member": [2, 22, 23, 62]}, {
+        "score": 20,
+        "name": "狐仙山庄",
+        "member": [17, 6, 51, 37]
+    }, {"score": 20, "name": "舍身成道", "member": [58, 25, 11, 63]}, {
+        "score": 20,
+        "name": "影犹在",
+        "member": [58, 25, 11, 13]
+    }, {"score": 20, "name": "陌镜池", "member": [14, 31, 64, 48]}, {
+        "score": 60,
+        "name": "秦陵之盟",
+        "member": [26, 59, 43, 12, 27]
+    }, {"score": 80, "name": "吾道不孤", "member": [38, 8, 9, 19, 20, 60]}, {
+        "score": 80,
+        "name": "玄天清月",
+        "member": [53, 10, 40, 21, 41, 28]
+    }]
 }
 
 export default data
